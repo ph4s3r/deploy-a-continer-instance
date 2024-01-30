@@ -1,0 +1,32 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "containerName": {
+      "value": "acidemo"
+    },
+    "location": {
+      "value": "uksouth"
+    },
+    "imageName": {
+      "value": "mcr.microsoft.com/azuredocs/aci-helloworld:latest"
+    },
+    "numberCpuCores": {
+      "value": "1"
+    },
+    "memory": {
+      "value": "1"
+    },
+    "subnetIds": {
+      "value": "/subscriptions/<subscriptionId>/resourceGroups/rg-dmznets/providers/Microsoft.Network/virtualNetworks/vnet-dmz-test-fishnet/subnets/DefaultSubnet"
+    },
+    "ports": {
+      "value": [
+        {
+          "port": "80",
+          "protocol": "TCP"
+        }
+      ]
+    }
+  }
+}
